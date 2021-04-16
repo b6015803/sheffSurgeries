@@ -7,7 +7,12 @@ class Receptionist {
 	String recepUsername
 	String recepPassword
 	String recepPhone
-
+//Constraints
     static constraints = {
+	recepName(blank:true)
+	recepEmail(email:true)
+	recepUsername(blank:false)
+	recepPassword(blank:false)
+	recepPhone(maxSize:11)
     }
 }

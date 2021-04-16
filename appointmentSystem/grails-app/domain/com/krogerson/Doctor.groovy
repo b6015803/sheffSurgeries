@@ -10,7 +10,15 @@ class Doctor {
 	String doctorOffice
 	String doctorPhone
 	String bio
-
+//Constraints
     static constraints = {
+	fullName(blank:true)
+	qualification(blank:false)
+	position(blank:false)
+	doctorEmail(email:true)
+	password(minSize:6)
+	doctorOffice(blank:false)
+	doctorPhone(maxSize:11)
+	bio(nullable:true)
     }
 }

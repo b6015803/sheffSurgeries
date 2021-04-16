@@ -9,7 +9,14 @@ class Patient {
 	String patientID
 	Date dateRegistered
 	String patientPhone 
-
+//Constraints
     static constraints = {
+	patientName(blank:true)
+	patientAddress(blank:false)
+	patientResidence(nullable:true)
+	patientDob(blank:false)
+	patientID(blank:false)
+	dateRegistered(blank:false)
+	patientPhone(maxSize:11)
     }
 }

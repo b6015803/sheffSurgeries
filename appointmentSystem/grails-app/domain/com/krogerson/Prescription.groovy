@@ -9,7 +9,13 @@ class Prescription {
 	Date dateissued
 	Boolean patientPaying
 
-
+//Constraints
     static constraints = {
+	PatientPaying(blank:false)
+	prescripNumber(maxSize:20)
+	medicine(maxSize: 25)
+	totalCost(maxSize: 4)
+	dateissued(blank:false)
+	patientPaying(blank:false)
     }
 }

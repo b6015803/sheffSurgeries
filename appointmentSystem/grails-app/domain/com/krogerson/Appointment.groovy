@@ -7,7 +7,11 @@ class Appointment {
 	int appDuration
 	String roomNumber
 
-
+//Constraints
     static constraints = {
+	roomNumber(blank:false)
+	appDate(blank:false)
+	appTime(blank:false)
+	appDuration(blank:false)
     }
 }
