@@ -2,5 +2,5 @@ package com.krogerson
 
 class PrescriptionController {
 
-    def index() { }
+    def scaffold=Prescription
 }

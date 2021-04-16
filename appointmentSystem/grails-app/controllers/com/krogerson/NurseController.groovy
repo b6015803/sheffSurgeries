@@ -2,5 +2,5 @@ package com.krogerson
 
 class NurseController {
 
-    def index() { }
+    def scaffold=Nurse
 }
