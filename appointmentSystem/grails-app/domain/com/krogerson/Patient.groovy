@@ -19,4 +19,7 @@ class Patient {
 	dateRegistered(blank:false)
 	patientPhone(maxSize:11)
     }
+//Relationships
+	static belongsTo=[Surgery,Doctor]
+	static hasMany=[surgeries:Surgery,doctors:Doctor,appointment:Appointment]
 }

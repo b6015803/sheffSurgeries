@@ -19,4 +19,7 @@ class Surgery {
 	description(nullable:true)
 	openingTime(blank:false)
     }
+//Relationships
+	static hasMany=[nurses:Nurse,doctors:Doctor,receptionist:Receptionist,patients:Patient]
+	static belongsTo=[Appointment]
 }

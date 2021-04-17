@@ -16,4 +16,7 @@ class Nurse {
 	nurseOffice(blank:false)
 	nursePhone(blank:false)
     }
+//Relationship
+	static belongsTo=[Surgery,Doctor]
+	static hasMany=[doctors:Doctor]
 }

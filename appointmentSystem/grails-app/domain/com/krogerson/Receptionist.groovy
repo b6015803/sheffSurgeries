@@ -15,4 +15,6 @@ class Receptionist {
 	recepPassword(blank:false)
 	recepPhone(maxSize:11)
     }
+//Relationships
+	static belongsTo=[Surgery]
 }

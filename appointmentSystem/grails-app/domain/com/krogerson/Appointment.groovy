@@ -14,4 +14,7 @@ class Appointment {
 	appTime(blank:false)
 	appDuration(blank:false)
     }
+//Relationships
+	static belongsTo=[Doctor]
+	static hasMany=[prescriptions:Prescription,surgeries:Surgery]
 }

@@ -21,4 +21,7 @@ class Doctor {
 	doctorPhone(maxSize:11)
 	bio(nullable:true)
     }
+//Relationships
+	static belongsTo=[Surgery]
+	static hasMany=[nurses:Nurse,patients:Patient,appointments:Appointment,prescriptions:Prescription]
 }

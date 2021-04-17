@@ -18,4 +18,6 @@ class Prescription {
 	dateissued(blank:false)
 	patientPaying(blank:false)
     }
+//Relationship
+	static belongsTo=[Doctor,Appointment]
 }
