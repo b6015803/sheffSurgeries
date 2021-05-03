@@ -9,6 +9,10 @@ class Prescription {
 	Date dateissued
 	Boolean patientPaying
 
+	String toString(){
+		return prescripNumber
+	}
+
 //Constraints
     static constraints = {
 	PatientPaying(blank:false)
@@ -19,5 +23,6 @@ class Prescription {
 	patientPaying(blank:false)
     }
 //Relationship
-	static belongsTo=[Doctor,Appointment]
+	static belongsTo=[Doctor,Patient]
+	static hasMany=[doctors:Doctor,patients:Patient]
 }

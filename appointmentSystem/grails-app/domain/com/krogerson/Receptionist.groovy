@@ -7,6 +7,10 @@ class Receptionist {
 	String recepUsername
 	String recepPassword
 	String recepPhone
+
+	String toString(){
+		return recepName
+	}
 //Constraints
     static constraints = {
 	recepName(blank:true)
@@ -16,5 +20,6 @@ class Receptionist {
 	recepPhone(maxSize:11)
     }
 //Relationships
-	static belongsTo=[Surgery]
+	/*static belongsTo=[Surgery,Doctor]
+	static hasMany=[doctors:Doctor,surgeries:Surgery]*/
 }
